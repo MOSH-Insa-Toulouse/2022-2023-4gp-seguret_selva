@@ -98,6 +98,16 @@ L'ensemble des résultats et de leurs analyses
 L’objectif de ce banc de test est de déterminer la variation relative de résistance de notre capteur en fonction de la déformation appliquée. Le capteur graphite est quant à lui scotché par une extrémité sur une autre feuille rigide, et pincé au niveau des pins de l’autre extrémité. L’objectif est de courber la feuille de papier rigide sur laquelle est scotché le capteur, afin que celui-ci adopte la forme des cercles de différents rayons.
 
 L'ensemble de ces tests ont été réalisés pour 5 types de crayons différents. Les résultats et analyses de ceux-ci sont disponibles sur le document suivant nommé :
-[Datasheet jauge](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/Datasheet/Datasheet%20jauge.pdf)
+[Datasheet jauge](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/Datasheet/Datasheet%20jauge.pdf)  
+  
+Il faut noter que notre capteur fonctionne assez bien car, pour n'importe quel type de crayon, la variation relative de résistance de notre capteur en fonction de la 
+déformation appliquée est quasi-linéaire.  
+  
+Malheureusement, il est notable que notre capteur graphite s'endommage assez rapidement lorsque l'on le plie car le papier n'est pas solide. Il n'est donc pas
+possible de réaliser la mesure plusieurs fois afin de vérifier ses résultats, ce qui rend la datasheet assez imprécise. Cela se traduit également par le fait que 
+les courbes obtenues ne sont pas totalement linéaires. Aussi, le dépôt de graphite lors du coloriage du papier est assez aléatoire, rendant le capteur
+encore plus imprécis.  
+  
+Tous ces éléments nous laissent ainsi penser que ce capteur low-tech est réalisable, mais n'est pas nécessairement très adapté à un usage industriel.
   
 
