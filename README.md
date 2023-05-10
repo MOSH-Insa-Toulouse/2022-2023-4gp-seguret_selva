@@ -13,8 +13,8 @@ Table des matières :
   
 1. Cahier des charges  
 2. Simulation électronique du circuit transimpédence sur LTSpice  
-3. Le code Arduino  
-4. L'APK permettant d'afficher en temps réel les variations de résistance, à l'aide d'une connexion Bluetooth  
+3. Notre code Arduino  
+4. Notre application Bluetooth 
 5. Le banc de test et l'élaboration de la Datasheet  
     
 ### *1. Cahier des charges*  
@@ -23,7 +23,7 @@ Table des matières :
   
 ### *3. Notre code Arduino*    
   
-### *4. L'application Bluetooth*  
+### *4. Notre application Bluetooth*  
   
 ### *5. Le banc de test et l'élaboration de la Datasheet*
   
