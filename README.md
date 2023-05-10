@@ -60,11 +60,16 @@ liés à la mesure, et nous permettant à l'aide d'un amplificateur LTC1050 d'am
   
 Voici, la simulation de notre amplificateur transimpédance réalisé sur le logiciel LTSpice :  
   
-![Figure 2: Amplificateur Transimpédance](./LTSpice/Ampli_Transimpedance.png "Figure 2: Amplificateur Transimpédance")
+![Figure 2: Amplificateur Transimpédance](./LTSpice/Ampli_Transimpedance.png "Figure 2: Amplificateur Transimpédance")  
   
 ### *3. L'utilisation de KiCAD en vue de la création de notre PCB* <a id="TroisiemeSection"></a>  
   
-### *4. Notre code Arduino* <a id="QuatriemeSection"></a>    
+
+  
+### *4. Notre code Arduino* <a id="QuatriemeSection"></a>  
+  
+Notre code Arduino nous a permis de connecter tous les éléments du Shield entre eux afin d'assurer le bon fonctionnement de celui-ci.  
+Rappelons que notre code Arduino que l'on peut retrouver dans le document nommé [AffichageRes]()
   
 ### *5. Notre application Bluetooth* <a id="CinquiemeSection"></a> 
   
