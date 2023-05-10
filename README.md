@@ -64,8 +64,25 @@ Voici, la simulation de notre amplificateur transimpédance réalisé sur le log
   
 ### *3. L'utilisation de KiCAD en vue de la création de notre PCB* <a id="TroisiemeSection"></a>  
   
-
+Dans l'objectif de réaliser notre PCB, nous avons dû utiliser le logiciel KiCAD. Certains composants n'étant pas disponibles dans les librairies du logiciel, 
+nous les avons créés afin de pouvoir designer tous les éléments dont nous avions besoin pour réaliser le Shield. Ce sont les éléments suivants accompagnés
+de leur empreinte et de leur schéma :  
   
+* Le module Bluetooth HC-05 :  
+![Figure 4: Module Bluetooth Schéma](./KiCAD/module_bt_schem.png "Figure 4: Module Bluetooth Schéma") ![Figure 5: Module Bluetooth Empreinte](./KiCAD/module_bt_foot.png "Figure 5: Module Bluetooth Empreinte") 
+* L'amplificateur opérationnel LTC1050 : 
+![Figure 6: LTC1050 Schéma](./KiCAD/LTC_schem.png "Figure 6: LTC1050 Schéma") ![Figure 7: ALTC1050 Empreinte](./KiCAD/LTC_foot.png "Figure 7: LTC1050 Empreinte") 
+* L'écran OLED I2C :  
+![Figure 8: OLED I2C Schéma](./KiCAD/oled_schem.png "Figure 8: OLED I2C Schéma") ![Figure 9: OLED I2C Empreinte](./KiCAD/oled_foot.png "Figure 9: OLED I2C Empreinte") 
+* Le Flex Sensor :  
+![Figure 10: Flex Sensor Schéma](./KiCAD/flex_schem.png "Figure 10: Flex Sensor Schéma") ![Figure 11: Flex Sensor Empreinte](./KiCAD/flex_foot.png "Figure 11: Flex Sensor Empreinte")  
+* Le capteur graphite :  
+![Figure 14: Capteur Graphite Schéma](./KiCAD/graphite_sens_schem.png "Figure 14: Capteur Graphite Schéma") ![Figure 15: Capteur Graphite Empreinte](./KiCAD/graphite_sens_foot.png "Figure 15: Capteur Graphite Empreinte")
+  
+Vous pouvez également visualiser ici le schéma de notre Shield Arduino ainsi que de la PCB :  
+  
+![Figure 12: Schéma Complet](./KiCAD/Schem_complet.png "Figure 12: Schéma Complet") ![Figure 13: PCB](./KiCAD/pcb_final.png "Figure 13: PCB")  
+   
 ### *4. Notre code Arduino* <a id="QuatriemeSection"></a>  
   
 Notre code Arduino nous a permis de connecter tous les éléments du Shield entre eux afin d'assurer le bon fonctionnement de celui-ci.  
