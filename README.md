@@ -21,10 +21,10 @@ Table des matières :
 ### *1. Cahier des charges* <a id="PremiereSection"></a>
   
 Nous sommes en binôme pour réaliser ce projet qui comprend plusieurs différents livrables :  
-* l  
-* l  
-* l  
-* l  
+* Un SHIELD PCB au préalable designé sur KiCAD  
+* Une application Android fonctionnant par Bluetooth permettant de visualiser l'évolution de la résistance du capteur en temps réel  
+* Un code Arduino permettant de calculer en temps réel la variation de résistance du capteur ainsi que de contrôler les élements du PCB  
+* Une datasheet regroupant les caractéristiques de fonctionnement du capteur  
   
 ### *2. Simulation électronique du circuit transimpédance sur LTSpice* <a id="DeuxiemeSection"></a> 
   
