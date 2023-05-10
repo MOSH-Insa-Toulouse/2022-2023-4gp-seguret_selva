@@ -69,7 +69,12 @@ Voici, la simulation de notre amplificateur transimpédance réalisé sur le log
 ### *4. Notre code Arduino* <a id="QuatriemeSection"></a>  
   
 Notre code Arduino nous a permis de connecter tous les éléments du Shield entre eux afin d'assurer le bon fonctionnement de celui-ci.  
-Rappelons que notre code Arduino que l'on peut retrouver dans le document nommé [AffichageRes](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/Code%20Arduino/AffichageRes)
+Rappelons que notre code Arduino que l'on peut retrouver dans le document nommé [AffichageRes](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/Code%20Arduino/AffichageRes) prend en charge les fonctionnalités suivantes :  
+* L'envoi et la réception de données sur l'application APK via le module Bluetooth HC-05  
+* Le calcul en temps réel de la variation de résistance associée à la déformation du capteur graphite  
+* L'acquistion et l'affichage de cette valeur de résistance sur l'écran OLED  
+* Le lancement de l'acquisition de données pour une certaine valeur de déformation du Flex Sensor  
+  
   
 ### *5. Notre application Bluetooth* <a id="CinquiemeSection"></a> 
   
