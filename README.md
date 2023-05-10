@@ -85,6 +85,19 @@ Notre application Andoid a été développée à l'aide du logiciel *MIT App Inv
   
 ### *6. Le banc de test et l'élaboration de la Datasheet* <a id="SixiemeSection"></a>  
   
-![Figure 3: Banc de Test](./Datasheet/Banc_De_Test.png "Figure 3: Banc de Test")
+Comme nous avons créé un capteur graphite low-tech, nous avons également décidé d'utiliser un banc de test low-tech.
+Le banc de test que vous pouvez voir ci-dessous a été créé il y a quelques années par l'un des professeurs de l'INSA Toulouse.  
+  
+![Figure 3: Banc de Test](./Datasheet/Banc_De_Test.png "Figure 3: Banc de Test")  
+  
+Ce banc de test nous a permis de tester différents angles de courbure pour notre capteur. En effet, nous avons placé notre capteur graphite sur les différentes
+portions de cette pièce, afin de faire varier sa résistance, que ce soit en tension ou en compression.
+
+L'ensemble des résultats et de leurs analyses  
+  
+L’objectif de ce banc de test est de déterminer la variation relative de résistance de notre capteur en fonction de la déformation appliquée. Le capteur graphite est quant à lui scotché par une extrémité sur une autre feuille rigide, et pincé au niveau des pins de l’autre extrémité. L’objectif est de courber la feuille de papier rigide sur laquelle est scotché le capteur, afin que celui-ci adopte la forme des cercles de différents rayons.
+
+L'ensemble de ces tests ont été réalisés pour 5 types de crayons différents. Les résultats et analyses de ceux-ci sont disponibles sur le document suivant nommé :
+[Datasheet jauge](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/LTSpice/Rapport%20LTSpice.pdf)
   
 
