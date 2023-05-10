@@ -78,6 +78,11 @@ Rappelons que notre code Arduino que l'on peut retrouver dans le document nommé
   
 ### *5. Notre application Bluetooth* <a id="CinquiemeSection"></a> 
   
+Notre application Andoid a été développée à l'aide du logiciel *MIT App Inventor*. Nous avons créé une interface graphique téléchargeable sur Android afin de :  
+* Connecter une téléphone au PCB via le module Bluetooth  
+* Visualiser en temps réel sous forme de graphique l'évolution de la résistance en fonction de la déformation  
+* Afficher la résistance du capteur en temps réel  
+  
 ### *6. Le banc de test et l'élaboration de la Datasheet* <a id="SixiemeSection"></a>
   
 
