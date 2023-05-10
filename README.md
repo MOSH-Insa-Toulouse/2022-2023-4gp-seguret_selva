@@ -7,6 +7,10 @@ La physique derrière cette variation de résistance vient du déplacement des �
 Après avoir appliqué une contrainte mécanique, la distance entre les nanoparticules varie, entraînant donc une modification de la conductivité du graphite.
 Cela induit donc une variation de résistance du capteur.  
   
+Voici une image représentant notre capteur low-tech à base de graphite :  
+  
+![Figure 1: Capteur Graphite low-tech](./Datasheet/CapteurGraphite.png "Figure 1: Capteur Graphite low-tech")  
+  
 Dans ce fichier nous allons décrire tous les procédés qui ont permis d'aboutir à la création de ce capteur.  
   
 Table des matières :  
