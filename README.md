@@ -7,4 +7,14 @@ La physique derrière cette variation de résistance vient du déplacement des �
 Après avoir appliqué une contrainte mécanique, la distance entre les nanoparticules varie, entraînant donc une modification de la conductivité du graphite.
 Cela induit donc une variation de résistance du capteur.  
   
-  f
+Dans ce fichier nous allons décrire tous les procédés qui ont permis d'aboutir à la création de ce capteur.  
+  
+Table des matières :  
+  
+1. Cahier des charges  
+2. Simulation électronique du circuit transimpédence sur LTSpice  
+3. Le code Arduino  
+4. L'APK permettant d'afficher en temps réel les variations de résistance, à l'aide d'une connexion Bluetooth  
+5. Le banc de test et l'élaboration de la Datasheet  
+  
+
