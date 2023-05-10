@@ -53,6 +53,8 @@ Le matériel suivant a été nécessaire à la confection de notre projet :
   
 ### *2. Simulation électronique du circuit transimpédance sur LTSpice* <a id="DeuxiemeSection"></a> 
   
+Comme nous l'avons démontré dans le document nommé [Rapport LTSpice](https://github.com/MOSH-Insa-Toulouse/2021-2022_Dabadie_Labrousse/tree/main/Simulation_LTSpice)
+  
 ### *3. L'utilisation de KiCAD en vue de la création de notre PCB* <a id="TroisiemeSection"></a>  
   
 ### *4. Notre code Arduino* <a id="QuatriemeSection"></a>    
