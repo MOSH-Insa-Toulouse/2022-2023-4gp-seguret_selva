@@ -70,7 +70,7 @@ de leur empreinte et de leur schéma :
   
 * Le module Bluetooth HC-05 :  
 ![Figure 4: Module Bluetooth Schéma](./KiCAD/module_bt_schem.png "Figure 4: Module Bluetooth Schéma") ![Figure 5: Module Bluetooth Empreinte](./KiCAD/module_bt_foot.png "Figure 5: Module Bluetooth Empreinte") 
-* L'amplificateur opérationnel LTC1050 : 
+* L'amplificateur opérationnel LTC1050 :   
 ![Figure 6: LTC1050 Schéma](./KiCAD/LTC_schem.png "Figure 6: LTC1050 Schéma") ![Figure 7: ALTC1050 Empreinte](./KiCAD/LTC_foot.png "Figure 7: LTC1050 Empreinte") 
 * L'écran OLED I2C :  
 ![Figure 8: OLED I2C Schéma](./KiCAD/oled_schem.png "Figure 8: OLED I2C Schéma") ![Figure 9: OLED I2C Empreinte](./KiCAD/oled_foot.png "Figure 9: OLED I2C Empreinte") 
