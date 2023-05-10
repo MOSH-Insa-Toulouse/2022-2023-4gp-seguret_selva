@@ -83,6 +83,8 @@ Notre application Andoid a été développée à l'aide du logiciel *MIT App Inv
 * Visualiser en temps réel sous forme de graphique l'évolution de la résistance en fonction de la déformation  
 * Afficher la résistance du capteur en temps réel  
   
-### *6. Le banc de test et l'élaboration de la Datasheet* <a id="SixiemeSection"></a>
+### *6. Le banc de test et l'élaboration de la Datasheet* <a id="SixiemeSection"></a>  
+  
+![Figure 3: Banc de Test](./Datasheet/Banc_De_Test.png "Figure 3: Banc de Test")
   
 
