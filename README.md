@@ -21,10 +21,31 @@ Table des matières :
 ### *1. Cahier des charges* <a id="PremiereSection"></a>
   
 Nous sommes en binôme pour réaliser ce projet qui comprend plusieurs différents livrables :  
-* Un SHIELD PCB au préalable designé sur KiCAD  
+* Un Shield PCB au préalable designé sur KiCAD  
 * Une application Android fonctionnant par Bluetooth permettant de visualiser l'évolution de la résistance du capteur en temps réel  
 * Un code Arduino permettant de calculer en temps réel la variation de résistance du capteur ainsi que de contrôler les élements du PCB  
 * Une datasheet regroupant les caractéristiques de fonctionnement du capteur  
+  
+Ainsi, afin de réaliser ce projet, il nous a été nécessaire de réaliser la simulation du capteur sur le logiciel LTSpice pour avoir une idée de l'ordre de grandeur de la résitance de celui-ci. 
+Nous avons ensuite utlisé le logiciel KiCAD dans le but de designer le Shield PCB relatif au bon fonctionnement du capteur, et redigé un code Arduino
+permettant le contrôle de certains éléments du Shield tels que le Flex Sensor, le module Bluetooth et l'écran OLED. Ce code Arduino nous permet également de calculer 
+en temps réel la valeur de la résistance du capteur.
+Après avoir effectué tout cela, nous avons créé une application APK Android permettant de connecter le module Bluetooth du PCB au téléphone de Julien, et de
+visualiser l'évolution de la résistance du capteur sur un graphique en temps réel.
+Enfin, la dernière étape visait à la réalisation d'une datasheet, via la caractérisation de notre jauge de contrainte.  
+  
+Le matériel suivant a été nécessaire à la confection de notre projet :  
+* Une carte Arduino UNO    
+* Un module Bluetooth HC-05  
+* Un écran OLED I2C  
+* Un amplificateur opérationnel LTC1050  
+* Deux résistances de 100 KOhms  
+* Une résistance de 10 KOhms  
+* Deux résistances de 1 KOhm  
+* Deux condensateurs de 100 nF  
+* Un condensateur de 100 µF  
+* Une feuille de papier  
+* Cinq crayons à papier différents  
   
 ### *2. Simulation électronique du circuit transimpédance sur LTSpice* <a id="DeuxiemeSection"></a> 
   
