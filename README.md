@@ -58,6 +58,10 @@ Ainsi, il nous est apparu comme nécessaire de réaliser un circuit transimpéda
 que la carte Arduino puisse la lire en temps réel. En parallèle de tout ça, sur ce circuit, nous avons placé quelques filtres passe-bas nous permettant de réduire les bruits
 liés à la mesure, et nous permettant à l'aide d'un amplificateur LTC1050 d'amplifier le signal de sortie.  
   
+Voici, la simulation de notre amplificateur transimpédance réalisé sur le logiciel LTSpice :  
+  
+![Figure 2 : Amplificateur Transimpédance](./LTSpice/Ampli Transimpedance.png "Figure 2 : Amplificateur Transimpédance")
+  
 ### *3. L'utilisation de KiCAD en vue de la création de notre PCB* <a id="TroisiemeSection"></a>  
   
 ### *4. Notre code Arduino* <a id="QuatriemeSection"></a>    
