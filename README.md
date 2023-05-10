@@ -12,19 +12,21 @@ Dans ce fichier nous allons décrire tous les procédés qui ont permis d'abouti
 Table des matières :  
   
 1. Cahier des charges  
-2. Simulation électronique du circuit transimpédence sur LTSpice  
-3. Notre code Arduino  
-4. Notre application Bluetooth 
-5. Le banc de test et l'élaboration de la Datasheet  
+2. Simulation électronique du circuit transimpédance sur LTSpice  
+4. Notre code Arduino  
+5. Notre application Bluetooth 
+6. Le banc de test et l'élaboration de la Datasheet  
     
 ### *1. Cahier des charges*  
   
-### *2. Simulation électronique du circuit transimpédence sur LTSpice*  
+### *2. Simulation électronique du circuit transimpédance sur LTSpice*  
   
-### *3. Notre code Arduino*    
+### *3. L'utilisation de KiCAD en vue de la création de notre PCB*  
   
-### *4. Notre application Bluetooth*  
+### *4. Notre code Arduino*    
   
-### *5. Le banc de test et l'élaboration de la Datasheet*
+### *5. Notre application Bluetooth*  
+  
+### *6. Le banc de test et l'élaboration de la Datasheet*
   
 
