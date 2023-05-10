@@ -1,0 +1,112 @@
+//affichage OLED et module BT de la valeur de Res du capteur de graphite 
+
+#include <Adafruit_SSD1306.h>
+#include <SoftwareSerial.h>
+#define baudrate 9600
+
+
+//les infos ci-dessous servent à initialiser l'oled avec la librairie AdaFruit 
+#define nb_pixel_largeur 128
+#define nb_pixel_hauteur 64
+#define broche_reset -1  //reset de l'OLED
+#define adresse_OLED 0x3C    //adresse de l'adruino sur le bus I2C
+//initialisation de l'OLED 
+Adafruit_SSD1306 ecranOLED(nb_pixel_largeur, nb_pixel_hauteur, &Wire, broche_reset); 
+
+
+//initialisation du BT
+#define rxPin 11 //Cette pin reçoit les données Bluetooth
+#define txPin 10 //Cette pin envoie les données Bluetooth
+SoftwareSerial mySerial(rxPin ,txPin); //Initie la communication Bluetooth
+
+//Valeur des résistances du circuit pour les calculs de conversion Tension/Resistance 
+float R1 = 100000.0 ;
+float R2 = 1000.0 ;
+float R3 = 100000.0 ;
+float R5 = 10000.0 ;
+
+float Vcc = 5.0 ; //Tension envoyée dans le circuit pour alimenter de capteur 
+
+//==============================================================================================================================================================// 
+
+
+void envoie_BT(float TensionCapteur){
+mySerial.write(TensionCapteur/4) ; //Envoie la tension récupérée en A0 (10bits vers 8 bits) au module BT pour calcul de la res depuis l'application   
+}
+
+
+void affichage_serial_monitor(float Res){
+
+  Serial.print("Resistance Value = ");
+  Serial.print(Res); //Permet d'afficher la valeur de la résistance sur le port série
+  Serial.println("MOhm");
+  
+}
+
+
+void affichage_res_oled(float Res){
+  ecranOLED.clearDisplay(); //vide le buffer de l'OLED 
+  ecranOLED.setTextSize(2);  
+  ecranOLED.setCursor(0,0);
+  ecranOLED.setTextColor(SSD1306_WHITE); 
+  ecranOLED.println("Res jauge"); 
+  ecranOLED.println(""); 
+  ecranOLED.println(Res); 
+  ecranOLED.println("MOhms") ;
+  ecranOLED.display() ; //transfère le buffer sur l'écran  
+  /*delay(1000);
+  ecranOLED.clearDisplay();  
+  ecranOLED.display() ;
+  delay(200);*/     // lignes facultatives pour faire clignoter l'écran 
+}
+
+void affichage_low_oled(){
+  ecranOLED.clearDisplay(); //vide le buffer de l'OLED 
+  ecranOLED.setTextSize(2);  
+  ecranOLED.setCursor(0,0);
+  ecranOLED.setTextColor(SSD1306_WHITE); 
+  ecranOLED.println("Res jauge"); 
+  ecranOLED.println(""); 
+  ecranOLED.println("too low") ;
+  ecranOLED.display() ; //transfère le buffer sur l'écran  
+}
+
+
+void setup() {
+  Serial.begin(baudrate) ;
+  mySerial.begin(baudrate);
+  ecranOLED.begin(SSD1306_SWITCHCAPVCC, adresse_OLED);   
+
+  pinMode(rxPin,INPUT);
+  pinMode(txPin,OUTPUT);
+}
+
+void loop() {
+
+  ///// Mesure de la tension délivrée par le circuit et conversion en valeur de Résistance /////
+
+  float sensorValue = analogRead(A0) ; //Permet de lire la valeur en A0
+  float VsensorValue = sensorValue*0.0048 ; //Convertit la valeur mesurée en volt
+  
+  float ResistanceSensor = ((Vcc/VsensorValue)*(R1/R2)*(R2+R3)-(R5+R1)) ; //Calcule la valeur de la résistance du capteur à l'aide du circuit en kOhm
+  float FinalResistanceSensor = ResistanceSensor*pow(10,-6) ; //Permet de convertir la valeur de résistance en MOhm
+
+  envoie_BT(sensorValue); 
+  
+  if (FinalResistanceSensor < 13.0) {
+  affichage_res_oled(FinalResistanceSensor); 
+  affichage_serial_monitor(FinalResistanceSensor);     
+  }
+
+  else {
+    affichage_low_oled ; 
+    Serial.print("Resistance too low")
+  }
+
+  delay(1000); //delay  pour stabilité de la mesure 
+}
+
+
+
+
+
