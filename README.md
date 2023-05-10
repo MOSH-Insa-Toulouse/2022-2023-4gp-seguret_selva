@@ -69,7 +69,7 @@ Voici, la simulation de notre amplificateur transimpédance réalisé sur le log
 ### *4. Notre code Arduino* <a id="QuatriemeSection"></a>  
   
 Notre code Arduino nous a permis de connecter tous les éléments du Shield entre eux afin d'assurer le bon fonctionnement de celui-ci.  
-Rappelons que notre code Arduino que l'on peut retrouver dans le document nommé [AffichageRes]()
+Rappelons que notre code Arduino que l'on peut retrouver dans le document nommé [AffichageRes](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/Code%20Arduino/AffichageRes)
   
 ### *5. Notre application Bluetooth* <a id="CinquiemeSection"></a> 
   
