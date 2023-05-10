@@ -20,6 +20,12 @@ Table des matières :
     
 ### *1. Cahier des charges* <a id="PremiereSection"></a>
   
+Nous sommes en binôme pour réaliser ce projet qui comprend plusieurs différents livrables :  
+* l  
+* l  
+* l  
+* l  
+  
 ### *2. Simulation électronique du circuit transimpédance sur LTSpice* <a id="DeuxiemeSection"></a> 
   
 ### *3. L'utilisation de KiCAD en vue de la création de notre PCB* <a id="TroisiemeSection"></a>  
