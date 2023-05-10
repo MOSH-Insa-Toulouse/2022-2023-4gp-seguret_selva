@@ -109,8 +109,6 @@ Le banc de test que vous pouvez voir ci-dessous a été créé il y a quelques a
   
 Ce banc de test nous a permis de tester différents angles de courbure pour notre capteur. En effet, nous avons placé notre capteur graphite sur les différentes
 portions de cette pièce, afin de faire varier sa résistance, que ce soit en tension ou en compression.
-
-L'ensemble des résultats et de leurs analyses  
   
 L’objectif de ce banc de test est de déterminer la variation relative de résistance de notre capteur en fonction de la déformation appliquée. Le capteur graphite est quant à lui scotché par une extrémité sur une autre feuille rigide, et pincé au niveau des pins de l’autre extrémité. L’objectif est de courber la feuille de papier rigide sur laquelle est scotché le capteur, afin que celui-ci adopte la forme des cercles de différents rayons.
 
