@@ -53,7 +53,11 @@ Le matériel suivant a été nécessaire à la confection de notre projet :
   
 ### *2. Simulation électronique du circuit transimpédance sur LTSpice* <a id="DeuxiemeSection"></a> 
   
-Comme nous l'avons démontré dans le document nommé [Rapport LTSpice](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/LTSpice/Rapport%20LTSpice.pdf)
+Comme nous l'avons démontré dans le document nommé [Rapport LTSpice](https://github.com/MOSH-Insa-Toulouse/2022-2023-4gp-seguret_selva/blob/main/LTSpice/Rapport%20LTSpice.pdf), le capteur ne délivrait qu'une intensité très faible (de l'ordre de quelques nF). Aussi, la carte Arduino n'est capable de sortir qu'une tension entre 0 et 5V.  
+Ainsi, il nous est apparu comme nécessaire de réaliser un circuit transimpédance afin de convertir les variations de courant du capteur en variations de tension, de sorte
+que la carte Arduino puisse la lire en temps réel. En parallèle de tout ça, sur ce circuit, nous avons placé quelques filtres passe-bas nous permettant de réduire les bruits
+liés à la mesure, et nous permettant à l'aide d'un amplificateur LTC1050 d'amplifier le signal de sortie.  
+  
 ### *3. L'utilisation de KiCAD en vue de la création de notre PCB* <a id="TroisiemeSection"></a>  
   
 ### *4. Notre code Arduino* <a id="QuatriemeSection"></a>    
